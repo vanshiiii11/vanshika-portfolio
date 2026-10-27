@@ -93,7 +93,7 @@ export const portfolioConfig = {
     potholeLive: 'https://pothole-detection-pgsq.onrender.com/',
     buildoraGithub: 'https://github.com/vanshiiii11/Buildora',
     buildoraLive: 'https://buildora-ten.vercel.app/',
-    parkinsonsGithub: '[ADD URL]',
+    parkinsonsGithub: 'https://github.com/vanshiiii11/Parkinson-Disease-detection',
     hackerrankProof: '[ADD LINK]',
     healthhackProof: '[ADD LINK]'
   },
@@ -225,9 +225,10 @@ export const portfolioConfig = {
       type: 'Healthcare Machine Learning',
       category: 'AI / Machine Learning',
       isFeatured: false,
-      githubUrl: '[ADD URL]',
+      githubUrl: 'https://github.com/vanshiiii11/Parkinson-Disease-detection',
       liveUrl: undefined,
       image: '/assets/projects/parkinsons.png',
+      imageWebp: '/assets/projects/parkinsons.webp',
       tags: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'SHAP', 'LIME', 'GridSearchCV'],
       summary:
         'Biomedical machine learning diagnostic pipeline evaluating vocal frequency perturbations for early Parkinson’s detection, with comparative classifier benchmarking and global/local feature explainability.',

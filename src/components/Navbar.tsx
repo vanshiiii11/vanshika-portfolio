@@ -15,7 +15,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAiBuddy }) => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40);
 
-      const sections = ['hero', 'projects', 'skills', 'process', 'experience', 'contact'];
+      const sections = ['hero', 'work', 'skills', 'process', 'experience', 'contact'];
       for (const id of sections) {
         const el = document.getElementById(id);
         if (el) {
@@ -33,7 +33,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAiBuddy }) => {
   }, []);
 
   const navLinks = [
-    { label: 'Work', href: '#projects', id: 'projects' },
+    { label: 'Work', href: '#work', id: 'work' },
     { label: 'Skills', href: '#skills', id: 'skills' },
     { label: 'Process', href: '#process', id: 'process' },
     { label: 'Experience', href: '#experience', id: 'experience' },

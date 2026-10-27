@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { ProjectsSection } from './components/ProjectsSection';
 import { BackgroundFX } from './components/BackgroundFX';
 import { CustomCursor } from './components/CustomCursor';
 import Lenis from 'lenis';
@@ -34,6 +35,7 @@ export const App: React.FC = () => {
       <Navbar />
       <main>
         <Hero />
+        <ProjectsSection />
       </main>
     </div>
   );
