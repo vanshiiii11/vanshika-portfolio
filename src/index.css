@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --black: #0B0B0B;
+    --black-card: #121212;
+    --black-card-hover: #171717;
+    --black-surface: #1C1C1C;
+    
+    --crimson: #8B0D1A;
+    --crimson-hover: #A8111F;
+    --crimson-glow: rgba(139, 13, 26, 0.22);
+    --crimson-subtle: rgba(139, 13, 26, 0.12);
+    --crimson-border: rgba(139, 13, 26, 0.35);
+
+    --off-white: #F5F2ED;
+    --off-white-60: rgba(245, 242, 237, 0.60);
+    --off-white-40: rgba(245, 242, 237, 0.40);
+    --off-white-10: rgba(245, 242, 237, 0.10);
+    --off-white-5: rgba(245, 242, 237, 0.05);
+  }
+
+  body {
+    background-color: var(--black);
+    color: var(--off-white);
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Big Shoulders Display', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-script {
+    font-family: 'Pinyon Script', cursive;
+  }
+}
+
+/* Custom Editorial Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A060A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B0D1A;
+}
+
+/* Subtle Film Grain Overlay */
+.grain-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* Subtle Glow Utilities */
+.radial-glow-crimson {
+  background: radial-gradient(circle at center, rgba(139, 13, 26, 0.28) 0%, rgba(139, 13, 26, 0.05) 50%, transparent 70%);
+}
+
+.hairline-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(139, 13, 26, 0.4) 15%, rgba(245, 242, 237, 0.15) 50%, rgba(139, 13, 26, 0.4) 85%, transparent 100%);
+}
+
+/* Text stroke utility */
+.text-stroke-crimson {
+  -webkit-text-stroke: 1px rgba(139, 13, 26, 0.4);
+  color: transparent;
+}
